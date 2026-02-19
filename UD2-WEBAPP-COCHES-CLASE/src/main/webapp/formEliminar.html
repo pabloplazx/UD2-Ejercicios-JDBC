@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Venta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .contenedor {
+            background: white;
+            padding: 30px;
+            display: inline-block;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        input {
+            padding: 8px;
+            margin: 10px 0;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #c0392b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a93226;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Eliminar Venta</h1>
+
+        <form action="ventas" method="post">
+            <!-- Acción CRUD -->
+            <input type="hidden" name="action" value="eliminar">
+
+            <label>ID de la venta:</label><br>
+            <input type="number" name="id" required><br>
+
+            <button type="submit">Eliminar</button>
+        </form>
+
+        <a href="index.html">⬅ Volver al menú</a>
+    </div>
+
+</body>
+</html>
