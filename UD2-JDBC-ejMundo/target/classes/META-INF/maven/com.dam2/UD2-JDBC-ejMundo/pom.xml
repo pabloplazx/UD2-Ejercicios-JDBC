@@ -5,4 +5,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>UD2-JDBC-ejMundo</name>
   <description>UD2-JDBC-ejMundo</description>
+  
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+			<dependency>
+			    <groupId>com.mysql</groupId>
+			    <artifactId>mysql-connector-j</artifactId>
+			    <version>8.0.33</version>
+			</dependency>
+			
+			<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+			<dependency>
+			    <groupId>com.zaxxer</groupId>
+			    <artifactId>HikariCP</artifactId>
+			    <version>7.0.2</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>ch.qos.logback</groupId>
+			    <artifactId>logback-classic</artifactId>
+			    <version>1.4.14</version>
+			</dependency>
+  </dependencies>
 </project>
